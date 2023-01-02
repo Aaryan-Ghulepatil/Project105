@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+
+   <link rel="stylesheet" href="style.css">
+    <title>Face Recognition Project</title>
+</head>
+<body>
+    <center>
+        <h1>Face Recognition Web App</h1><br>
+        <h4>Model is trained to identify the following objects:</h4><br>
+        <b class="name_objects">
+            Father
+            <hr>
+            Mother
+            <hr>
+            Brother
+            <hr>
+            Sister
+            <hr>
+        </b>
+        <p>Webcam View - </p>
+        <br><br>
+        <div id="camera">
+        </div>
+        <div id="output"></div>
+        <br><br>
+        <button onclick="capture()" class="btn btn-success"> Capture Image </button>
+        <br><br>
+        <button onclick="identify()" class="btn btn-info"> Identify Image </button>
+        <br><br>
+        <p>Object: <span id="result_label"></span></p>
+        <p>Accuracy: <span id="result_accuracy"></span></p>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-image:linear-gradient(orange,yellow);
+    font-size:20px;
+    font-family:monospace;
+}
+
+h1{
+    font-size:60px;
+    color:gold;
+    background-color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+    margin-top:0px;
+}
+h4,b{
+    color:white;
+}
+#camera{
+    width:600px;
+    height:340px;
+    border: 4px dotted ;
+}
